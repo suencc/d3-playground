@@ -18,7 +18,7 @@ user_issue_comments = function (user, issue) {
           d3.select('body')
             .append('pre')
             .html(d.body)
-            .style({background: '#ccc', padding: '1em'});
+            .style({'border-left' : '5px solid '#ccc', padding: '1em'});
           d3.select('body')
             .append('div')
             .html(marked(d.body));
