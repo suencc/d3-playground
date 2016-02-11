@@ -24,4 +24,4 @@ The keyword here is "locally". In top-down designed organization, the dependency
 
 Not only the change is local, the communication is also mostly local until a centralized "broadcast" system appears. That is the difference between "word of mouth" and "propaganda".
 
-The change from single source broadcast to multi-source broadcast (social media) would have some impact on how culture evolves. We see it coming but do not know where it would go.
+The change from single-source broadcast to multi-source broadcast (social media) would have some impact on how culture evolves. We see it coming but do not know where it would go.
