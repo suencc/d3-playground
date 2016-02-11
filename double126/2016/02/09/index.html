@@ -30,12 +30,99 @@
     			</address>
     		</p>
     	</li>
+    	<li>article,aside,em,b,strong,mark
+    		<article>
+  			<p>
+  				这是<em>em着重阅读</em><br>
+  				这是<b>b加粗</b><br>
+  				这是<strong>strong内容重要</strong><br>
+  				这是<mark>mark上下文相关性，高亮</mark><br>
+  				&lt;strong&gt;元素明确表示文本很重要。&lt;em&gt; 元素在文本上添加强调。&lt;mark&gt; 元素明确表示文本的相关性。&lt;b&gt; 元素并不包含这些特殊的语义信息，应当仅仅当其他元素都不合适时使用它。<br>
+			    The Disney movie <em>The Little Mermaid</em> was
+			    first released to theatres in 1989.
+			  </p>
+			  <aside>
+			    The movie earned $87 million during its initial release.
+			  </aside>
+			  <p>
+			    More info about the movie...
+			  </p>
+			</article>
+    	</li>
     
+    </ul>
+    
+    <h2>B</h2>
+    <ul>
+    	<li>bdi,bdo
+    		<!--not support<p>&lt;bdi&gt; This arabic word ARABIC_PLACEHOLDER <bdi dir="rtl">ARABIC_PLACEHOLDER</bdi> is automatically displayed right-to-left.</p>
+    		<p>&lt;bdi&gt; This arabic word ARABIC_PLACEHOLDER <bdi dir="ltr">ARABIC_PLACEHOLDER</bdi> is automatically displayed left-to-right.</p>
+    		<p>&lt;bdi&gt; This arabic word ARABIC_PLACEHOLDER <bdi dir="aoto">ARABIC_PLACEHOLDER</bdi> is automatically displayed aoto.</p>
+    		-->
+    		
+
+				<p>This text will go right to left:&lt;bdo&gt;<bdo dir="rtl">This text will go right to left.</bdo></p>
+				<p>This text will go left to right:&lt;bdo&gt;<bdo dir="ltr">This text will go left to right.</bdo></p>
+				<p>This text will go auto:&lt;bdo&gt;<bdo dir="auto">This text will go auto.</bdo></p>
+
+    	</li>
+    	
+    	<li>blockquote,q,cite
+    		<p>
+    			&lt;blockquote&gt;长引用，说话<br>	
+    			<blockquote cite="http://developer.mozilla.org">
+					  This is a quotation taken from the Mozilla Developer Center.
+					</blockquote>
+					
+					&lt;q&gt;行间引用，说话<br>
+					<p>Everytime Kenny is killed, Stan will announce 
+					   <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">
+					     Oh my God, you/they killed Kenny!
+					   </q>.
+					</p>
+					
+					&lt;cite&gt;作品引用<br>
+					More information can be found in <cite>[ISO-0000]</cite>.
+				
+				</p>
+    	</li>
+    	
+    	<li>br
+    		<p>换行，结束tag非必须</p>
+
+				Mozilla Foundation<br>1981 Landings Drive<br>Building K<br>Mountain View, CA 94043-0801<br>USA
+    	</li>
+    	
+    	<li>button
+    		<button name="button">click</button>
+    	</li>
+    
+    </ul>
+    
+    
+    	
+    
+    <h2>C</h2>
+    <ul>
+    	<li>code
+    		<p>code等宽字体显示</p>
+    		<p>Regular text. <code>This is code.</code> Regular text.</p>
+    		<p>正常字体<code>中文等宽字体</code>正常字体.</p>
+    	</li>   
+    </ul>
+    
+    <h2>D</h2>
+    <ul>
+    	<li>del
+    		<p><del>This text has been deleted</del>, here is the rest of the paragraph.</p>
+				<del ><p >This paragraph has been deleted.</p ></del >
+    	</li>   
     </ul>
     
     <h2>I</h2>
     <ul>
-    	<li>img
+    	<li>img,map,area
+    		<p>img,area无闭合,map有闭合
     		<img src="images/life.jpg" border="0" usemap="#mylife" alt="life" />
 
 				<map name="mylife" id="mylife">
@@ -49,7 +136,7 @@
     
     <h2>S</h2>
     <ul>
-    	<li>select
+    	<li>select-option
     		<select name="select-option">
     			<option value="red">红</option>
     			<option value="black">黑</option>
@@ -59,6 +146,125 @@
     	
     
     </ul>
+    
+    <h2>T</h2>
+    <ul>
+    	<li>table,th,tr,td<br>
+    		th-table head,tr-table row,td-table data
+    		<table>
+			  <tr>
+			    <td>John</td>
+			    <td>Doe</td>
+			  </tr>
+			  <tr>
+			    <td>Jane</td>
+			    <td>Doe</td>
+			  </tr>
+			</table>
+			
+			<p>Simple table with header</p>
+			<table>
+			  <tr>
+			    <th>First name</th>
+			    <th>Last name</th>
+			  </tr>
+			  <tr>
+			    <td>John</td>
+			    <td>Doe</td>
+			  </tr>
+			  <tr>
+			    <td>Jane</td>
+			    <td>Doe</td>
+			  </tr>
+			</table>
+			
+			<p>Table with thead, tfoot, and tbody<br>
+				&lt;thead&gt; defines a set of rows defining the head of the columns of the table.<br>
+				&lt;tfoot&gt; defines a set of rows summarizing the columns of the table.
+			</p>
+			<table>
+			  <thead>
+			    <tr>
+			      <th>Header content 1</th>
+			      <th>Header content 2</th>
+			    </tr>
+			  </thead>
+			  <tfoot>
+			    <tr>
+			      <td>Footer content 1</td>
+			      <td>Footer content 2</td>
+			    </tr>
+			  </tfoot>
+			  <tbody>
+			    <tr>
+			      <td>Body content 1</td>
+			      <td>Body content 2</td>
+			    </tr>
+			  </tbody>
+			</table>
+			
+			<p>Table with colgroup<br>
+				&lt;colgroup&gt; defines a group of columns within a table. 
+				&lt;col&gt; defines a column within a table and is used for defining common semantics on all common cells.
+			</p>
+			<table border=1>
+			  <colgroup span="4" class="columns"></colgroup>
+			  <tr>
+			    <th>Countries</th>
+			    <th>Capitals</th>
+			    <th>Population</th>
+			    <th>Language</th>
+			  </tr>
+			  <tr>
+			    <td>USA</td>
+			    <td>Washington D.C.</td>
+			    <td>309 million</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Sweden</td>
+			    <td>Stockholm</td>
+			    <td>9 million</td>
+			    <td>Swedish</td>
+			  </tr>
+			</table>
+			
+			<p>Table with colgroup and col</p>
+			<table border=3>
+			  <colgroup>
+			    <col class="column1">
+			    <col class="columns2plus3" span="2">
+			  </colgroup>
+			  <tr>
+			    <th>Lime</th>
+			    <th>Lemon</th>
+			    <th>Orange</th>
+			  </tr>
+			  <tr>
+			    <td>Green</td>
+			    <td>Yellow</td>
+			    <td>Orange</td>
+			  </tr>
+			</table>
+			
+			<p>Simple table with caption<br>
+				&lt;caption&gt;表格标题:Fruit color
+			</p>
+			<table border=1>
+			  <caption>Fruit color</caption>
+			  <tr>
+			    <th>Lime</th>
+			    <th>Lemon</th>
+			    <th>Orange</th>
+			  </tr>
+			  <tr>
+			    <td>Green</td>
+			    <td>Yellow</td>
+			    <td>Orange</td>
+			  </tr>
+			</table>
+
+    	</li>
   
   </body>
 </html>
