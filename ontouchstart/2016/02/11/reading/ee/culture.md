@@ -22,4 +22,6 @@ Richard Dawkins, [The Greatest Show on Earth](http://www.amazon.com/The-Greatest
 
 The keyword here is "locally". In top-down designed organization, the dependency is *global*; but in bottom-up grown organism, it is *local*. 
 
-Not only the change is local, the communication is mostly local until a centralized "broadcast" system appears. That is the difference between "word of mouth" and "propaganda".
+Not only the change is local, the communication is also mostly local until a centralized "broadcast" system appears. That is the difference between "word of mouth" and "propaganda".
+
+The change from single source broadcast to multi-source broadcast (social media) would have some impact on how culture evolves. We see it coming but do not know where it would go.
