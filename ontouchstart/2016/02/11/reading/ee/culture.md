@@ -12,4 +12,6 @@ title : The Evolution of Culture
 
 Lucretius, [De Rerum Natura](http://www.amazon.com/The-Nature-Things-Penguin-Classics/dp/0140447962), Book 5, lines 1041-5
 
+> The key point is that there is no choreographer and no leader. Order, organization, structure &mdash; these all emerge as by-products of rules which are obeyed locally and many times over
 
+Richard Dawkins, [The Greatest Show on Earth](http://www.amazon.com/The-Greatest-Show-Earth-Evolution/dp/1416594795)
