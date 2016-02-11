@@ -4,7 +4,7 @@ title : The Evolution of Culture
 ---
 # The Evolution of Culture
 
-#### From the book
+#### From the [book](index.html)
 
 > And therefore to assume there was one person gave a name  
 > To everything, and that all learned their first words from the same,  
