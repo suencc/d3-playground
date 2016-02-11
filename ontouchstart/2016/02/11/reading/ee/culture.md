@@ -21,3 +21,5 @@ Richard Dawkins, [The Greatest Show on Earth](http://www.amazon.com/The-Greatest
 #### Note
 
 The keyword here is "locally". In top-down designed organization, the dependency is *global*; but in bottom-up grown organism, it is *local*. 
+
+Now only the change is local, the communication is mostly local until a centralized "broadcast" system appears. That is the difference between "word of mouth" and "propaganda".
