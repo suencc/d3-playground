@@ -1,5 +1,6 @@
 ---
 layout : d3
+title : The Evolution of Everything 
 ---
 
 # The Evolution of Everything 
