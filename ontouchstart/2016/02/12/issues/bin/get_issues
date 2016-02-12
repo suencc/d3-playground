@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+https = require('https');
+host = 'api.github.com';
+path = '/repos/bigdata-mindstorms/d3-playground/issues';
+options = {
+  hostname: host,
+  path: path,
+  headers: {
+      'User-Agent' : 'ontouchstart'
+  }
+};
+
+callback = (res) => {
+  res.pipe(process.stdout); 
+};
+
+https.get(options, callback)
+  .on('error', function (e) {
+      console.log('error', e); 
+  });
