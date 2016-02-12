@@ -1,0 +1,1 @@
+var关键字可省略,function不可省略
