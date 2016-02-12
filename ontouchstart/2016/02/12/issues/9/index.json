@@ -1,0 +1,43 @@
+{
+  "url": "https://api.github.com/repos/bigdata-mindstorms/d3-playground/issues/9",
+  "repository_url": "https://api.github.com/repos/bigdata-mindstorms/d3-playground",
+  "labels_url": "https://api.github.com/repos/bigdata-mindstorms/d3-playground/issues/9/labels{/name}",
+  "comments_url": "https://api.github.com/repos/bigdata-mindstorms/d3-playground/issues/9/comments",
+  "events_url": "https://api.github.com/repos/bigdata-mindstorms/d3-playground/issues/9/events",
+  "html_url": "https://github.com/bigdata-mindstorms/d3-playground/issues/9",
+  "id": 124451950,
+  "number": 9,
+  "title": "Join d3-playground team",
+  "user": {
+    "login": "ontouchstart",
+    "id": 951921,
+    "avatar_url": "https://avatars.githubusercontent.com/u/951921?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ontouchstart",
+    "html_url": "https://github.com/ontouchstart",
+    "followers_url": "https://api.github.com/users/ontouchstart/followers",
+    "following_url": "https://api.github.com/users/ontouchstart/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ontouchstart/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ontouchstart/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ontouchstart/subscriptions",
+    "organizations_url": "https://api.github.com/users/ontouchstart/orgs",
+    "repos_url": "https://api.github.com/users/ontouchstart/repos",
+    "events_url": "https://api.github.com/users/ontouchstart/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ontouchstart/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 48,
+  "created_at": "2015-12-31T09:35:44Z",
+  "updated_at": "2016-02-11T03:33:06Z",
+  "closed_at": null,
+  "body": "If you want to join d3-playground team, please make a comment here. Thanks.",
+  "closed_by": null
+}
