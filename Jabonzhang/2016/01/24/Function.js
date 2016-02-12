@@ -8,6 +8,7 @@ selection.append("input").attr("type","number").attr("id","b");
 selection.append("button").html(" = ").on("click",function() { 
 var a = selection.select("input#a").property("value"); 
 var b = selection.select("input#b").property("value"); 
-var NaN = Number.parseFloat(a) * Number.parseFloat(b); 
-selection.append("text").html(NaN); 
+var mul = Number.parseFloat(a) * Number.parseFloat(b); 
+result.html(mul);
 });
+var result=selection.append("text");
