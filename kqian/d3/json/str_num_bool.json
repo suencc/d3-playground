@@ -1,0 +1,7 @@
+str_num_bool = [];
+str_num_bool.push("apple");
+str_num_bool.push(2016);
+str_num_bool.push(true);
+console.log(str_num_bool);
+JSON.stringify(str_num_bool);
+JSON.parse(JSON.stringify(str_num_bool));
