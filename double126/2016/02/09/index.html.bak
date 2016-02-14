@@ -270,10 +270,10 @@
 
 				
 				<br>男性：
-				<input type="radio" checked="checked" name="Sex" value="male" />
+				<input type="radio"  checked name="Sex" value="male" />
 				<br />
 				女性：
-				<input type="radio" name="Sex" value="female" /><br/>
+				<input type="radio"   name="Sex" value="female" /><br/>
 				本科：
 				<input type="radio" name="degree" value="BC" />
 				研究生：
@@ -305,11 +305,8 @@
     		<p>区分普通文本,斜体</p>
     		<p>拉丁文 <i>Veni, vidi, vici</i> 经常在音乐、艺术、文学中被提到。</p>
     	</li>
-    	<li>iframe
-    	<script type="text/javascript">
-			  var iframe = window.getElementsByTagName( "iframe" )[ 0 ];
-			  alert( "Frame title: " + iframe.contentWindow.title );
-			</script>
+    	<li>ins
+    	<ins>这一段文本是新插入至文档的。</ins>
 		  </li>
     	
     

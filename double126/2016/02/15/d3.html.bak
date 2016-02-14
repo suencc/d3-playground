@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test d3 page</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+   
+  </head>
+  <body>
+  	<script src="d3/d3.js" charset="utf-8"></script>
+  	
+		<script src="scripts/d3.js"></script>
+		
+		<script>
+				function add_radio(selection, name, checked , value) {
+  			var radio_sel = selection.append('input').attr('type', "radio").attr('name',name).attr('value',value);
+			
+			  console.log(checked);
+			
+			  if(checked == "true"){
+			    console.log(value +' checked true');
+			    radio_sel.attr('checked',true);
+			  }
+			
+			}
+			
+			d3.select('body').append('fieldset').append('legend').html('Sex').style('font-size','x-large');
+			add_radio(d3.select('body').select('fieldset').append('p').html('male:'), "sex", "true", "male");
+			add_radio(d3.select('body').select('fieldset').append('p').html('female:'), "sex", "false", "female");
+  	</script>
+  </body>
+</html>
