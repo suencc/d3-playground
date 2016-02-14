@@ -1,0 +1,10 @@
+jsonArry = [];
+jsonArry.push("梨子");
+jsonArry.push('苹果');
+jsonArry.push(123);
+jsonArry.push(true);
+jsonArry.push("false");
+jsonArry.push({"name":"小明"});
+console.log(jsonArry);
+var jst1 = JSON.stringify(jsonArry);
+console.log(jst1);
