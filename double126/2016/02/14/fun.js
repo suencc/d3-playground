@@ -1,5 +1,5 @@
 function add_radio(selection, name, checked , value) {
-  selection.append('input').attr('type', "radio").attr('name',name).attr('value',value)
+  selection.append('input').attr('type', "radio").attr('name',name).attr('value',value).attr('checked',checked)
 
 }
 
