@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+fs = require('fs');
+https = require('https');
+path = require('path');
+
+fetch = (src) => {
+  var host = 'api.github.com';
+  var base = '/repos/bigdata-mindstorms/d3-playground/';
+  try {
+    fs.mkdirSync(path.dirname(src));
+  }
+  catch(e) {
+    // do nothing
+  }
+  var filename = src + '.json';
+  var options = {
+    hostname: host,
+    path: base + src,
+    headers: {
+      'User-Agent' : 'ontouchstart'
+    }
+  };
+
+  var callback = (res) => {
+    res.pipe(fs.createWriteStream(filename));
+    console.log(filename);
+  };
+
+  https.get(options, callback)
+    .on('error', function (e) {
+      console.log('error', e); 
+    });
+};
+
+fetch('issues');
+fetch('milestone/2');
+fs.readFile('list.json', 'utf8', (e, d) => {
+  JSON.parse(d).forEach(function (d) {
+    fetch('issues/' + d);
+    fetch('issues/' + d + '/comments');
+  });
+});
