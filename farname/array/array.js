@@ -1,5 +1,4 @@
 var data = [ 25, 5, 15, 30, 55 ];
-var moviename = [ "a", "b", "c", "d", "e" ];
 d3.select("body").selectAll("div")
     .data(data)
     .enter()
