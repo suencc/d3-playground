@@ -1,6 +1,11 @@
 ---
 layout : d3
 title : Data Test
+data:
+  - name : kyle
+    url : https://github.com/bigdata-mindstorms/d3-playground/issues/21#issuecomment-183353759
+  - name : timerish
+    url : https://github.com/bigdata-mindstorms/d3-playground/issues/21#issuecomment-182171600
 ---
 <script>
   function add_data (selection, d, name) { 
@@ -15,5 +20,5 @@ title : Data Test
       add_data(list.append('li'), d.url, d.name) 
     }); 
   }
-undefined
+  data = {{ page.data | jsonify }};
 </script>
