@@ -6,6 +6,9 @@ data:
     url : https://github.com/bigdata-mindstorms/d3-playground/issues/21#issuecomment-183353759
   - name : timerish
     url : https://github.com/bigdata-mindstorms/d3-playground/issues/21#issuecomment-182171600
+style:
+  border : 1px solid blue
+  background : ivory
 ---
 <script>
   function add_data (selection, d, name) { 
@@ -21,4 +24,6 @@ data:
     }); 
   }
   data = {{ page.data | jsonify }};
+  print_data(d3.select('body').append('div').style('border', '1px solid blue'), data);
+  print_data(d3.select('body').append('div').style({{ page.style | jsonify }}), {{ page.data | jsonify }});
 </script>
