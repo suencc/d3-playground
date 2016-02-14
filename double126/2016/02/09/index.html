@@ -95,6 +95,7 @@
     	
     	<li>button
     		<button name="button">click</button>
+    		<input type="button" value="Hello world!">
     	</li>
     
     </ul>
@@ -117,12 +118,108 @@
     		<p><del>This text has been deleted</del>, here is the rest of the paragraph.</p>
 				<del ><p >This paragraph has been deleted.</p ></del >
     	</li>   
+    	
+    	<li>dl,dt,dd
+    		<p>&lt;dl&gt;描述列表element (or HTML Description List Element) encloses a list of pairs of terms and descriptions. 
+    			Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).<br>
+    			&lt;dt&gt;identifies a term in a definition list;定义列表术语<br>
+    			&lt;dd&gt;indicates the description of a term in a description list element.具体描述must follow a &lt;dt&gt; element.
+    		<dl>
+    			<p>单术语单描述</p>
+				  <dt>Firefox</dt>
+				  <dd>A free, open source, cross-platform, graphical web browser
+				      developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+				
+				  <!-- other terms and definitions -->
+				</dl>
+				
+				<dl>
+					<p>多术语单描述</p>
+				  <dt>Firefox</dt>
+				  <dt>Mozilla Firefox</dt>
+				  <dt>Fx</dt>
+				  <dd>A free, open source, cross-platform, graphical web browser
+				      developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+				
+				  <!-- other terms and definitions -->
+				</dl>
+				<dl>
+					<p>单术语多描述</p>
+				  <dt>Firefox</dt>
+				  <dd>A free, open source, cross-platform, graphical web browser
+				      developed by the Mozilla Corporation and hundreds of volunteers.</dd>
+				  <dd>The Red Panda also known as the Lesser Panda, Wah, Bear Cat or Firefox,
+				      is a mostly herbivorous mammal, slightly larger than a domestic cat
+				      (60 cm long).</dd>
+				
+				  <!-- other terms and definitions -->
+				</dl>
+				
+				<dl>
+					<p>多术语多描述</p>
+				  <dt>Limo</dt>
+				  <dd>green</dd>
+				  <dt>Orange</dt>
+				  <dd>orange</dd>
+				  <dt>Lemo</dt>
+				  <dd>yellow</dd>
+				</dl>
+			</li>
+    	
+    	<li>dfn
+    		<!-- Define "The Internet" -->
+				<p>术语定义<dfn id="def-internet">The Internet</dfn> is a global system of interconnected networks that use the Internet Protocol Suite (TCP/IP) to serve billions of users worldwide.</p>
+				<dl>
+				  <!-- Define "World-Wide Web" and reference definition for "the Internet" -->
+				  <dt>
+				    <dfn>
+				      <abbr title="World-Wide Web">WWW</abbr>
+				    </dfn>
+				  </dt>
+				  <dd>The World-Wide Web (WWW) is a system of interlinked hypertext documents accessed on <a href="#def-internet">the Internet转到dfn id</a>.</dd>
+				</dl>
+    	</li>  
+    	
+    	<li>div
+    		<div>
+				  <p>这里可以是任何内容，比如 &lt;p&gt;, &lt;table&gt;，一切由你作主。</p>
+				</div>
+    	</li>     
+    	
+    </ul>
+    
+   
+    <h2>H</h2>
+    <ul>
+    	<li>h1-h6
+    		<h1>一级标题</h1>
+    		<p>一级内容</p>
+    		<h2>二级标题</h2>
+    		<p>二级内容</p>
+    		<h3>三级标题</h3>
+    		<p>三级内容</p>
+    		<h4>四级标题</h4>
+    		<p>四级内容</p>
+    		<h5>五级标题</h5>
+    		<p>五级内容</p>
+    		<h6>六级标题</h6>
+    		<p>六级内容</p>
+    		<h7>七级标题</h7>
+    		<p>七级内容</p>
+    	</li>
+    	
+    	<li>hr
+    		<p>创建水平线，无闭合tag</p>
+    		<p>This is some  1 text</p>
+				<hr>
+				<p>This is some 2 text</p>
+    	</li>
     </ul>
     
     <h2>I</h2>
     <ul>
     	<li>img,map,area
-    		<p>img,area无闭合,map有闭合
+    		<p>img,area无闭合,map有闭合</p>
     		<img src="images/life.jpg" border="0" usemap="#mylife" alt="life" />
 
 				<map name="mylife" id="mylife">
@@ -130,6 +227,87 @@
   				<area shape="rect" coords="0,30,100,230" href ="mylife/tree.html" alt="tree" />
 				</map>
     	</li>
+    	
+    	<li>input,form,label
+    		<p>交互</p>
+    		<!-- 一个基本的文本输入框 -->
+				<input name="input1" value="Type here"><br/>
+				<input type="text" name="input2" value="Type here"><br/>
+				<input type="checkbox" name="input checkbox"><br/>
+				
+				<!-- 一个常见的表单,包含了一些input元素 -->
+				<form action="getform.php" method="get">
+				    First name: <input type="text" name="first_name" /><br />
+				     Last name: <input type="text" name="last_name" /><br />
+				        E-mail: <input type="email" name="user_email" /><br />
+				<input type="submit" value="Submit" />
+				</form>
+				
+				用户：
+				<input type="text" name="user">
+				<br />
+				密码：
+				<input type="password" name="password"><br/>
+				
+				<fieldset>
+			    <legend>legend加fieldset分组边框标题：健康信息</legend>
+			    身高：<input type="text" />
+			    体重：<input type="text" />
+			  </fieldset>
+				
+				
+				<p>
+				This example cannot be edited
+				because our editor uses a textarea
+				for input,
+				and your browser does not allow
+				a textarea inside a textarea.
+				</p>
+				
+				<textarea rows="5" cols="30" />
+				The cat was playing in the garden.
+				</textarea>
+
+				
+				<br>男性：
+				<input type="radio" checked="checked" name="Sex" value="male" />
+				<br />
+				女性：
+				<input type="radio" name="Sex" value="female" /><br/>
+				本科：
+				<input type="radio" name="degree" value="BC" />
+				研究生：
+				<input type="radio" name="degree" value="PC" />
+				
+				<!-- 一个简单的表单，这个表单会发送一个 GET 请求 -->
+				<form action="">
+				  <label for="GET-name">Name:</label>
+				  <input id="GET-name" type="text" name="name">
+				  <input type="submit" value="Save">
+				</form>
+				
+				<!-- 使用 fieldset, legend, and label 的表单 -->
+				<form action="" method="post">
+				  <fieldset>
+				    <legend>Title</legend>
+				    <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+				  </fieldset>
+				</form>
+
+    	</li>
+    	
+    
+    </ul>
+    
+    <h2>I</h2>
+    <ul>
+    	<li>i
+    		<p>区分普通文本,斜体</p>
+    		<p>拉丁文 <i>Veni, vidi, vici</i> 经常在音乐、艺术、文学中被提到。</p>
+    	</li>
+    	<li>ins
+    	<ins>这一段文本是新插入至文档的。</ins>
+		  </li>
     	
     
     </ul>
