@@ -2,3 +2,18 @@
 layout : d3
 title : Data Test
 ---
+<script>
+  function add_data (selection, d, name) { 
+    selection.append('a')
+    .attr('href', d)
+    .html(name);
+  }
+  
+  function print_data(selection, d) { 
+    var list = selection.append('ol'); 
+    d.forEach(function (d) {
+      add_data(list.append('li'), d.url, d.name) 
+    }); 
+  }
+undefined
+</script>
