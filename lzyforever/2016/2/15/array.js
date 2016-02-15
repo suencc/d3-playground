@@ -4,7 +4,7 @@ function print(array){
   selection = d3.select("body").append("table");
   array.forEach(function(item,index){
     tr = selection.append("tr");
-    td_user(tr, item); 
+    td_car(tr, item); 
   })
 }
 
