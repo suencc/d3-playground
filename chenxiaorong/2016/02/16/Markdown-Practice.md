@@ -1,4 +1,4 @@
-#[]
+
 ```
 function hello(){
       alert('hello world!');
@@ -10,7 +10,8 @@ function hello(){
       alert('hello world!');
 }
 ```
-##
+#[]
+
 <h5>代码嵌入：</h5>
 ```markdown
 1. Item 1
@@ -36,4 +37,4 @@ function hello(){
    * Item 3b
 ```
 
-###
+#[]
