@@ -1,0 +1,11 @@
+```
+function hello(){
+      alert('hello world!');
+}
+```
+
+```javascript
+function hello(){
+      alert('hello world!');
+}
+```
