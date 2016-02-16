@@ -11,6 +11,7 @@ function hello(){
 }
 ```
 ##
+<h5>代码嵌入：</h5>
 ```markdown
 1. Item 1
 2. Item 2
@@ -25,8 +26,8 @@ function hello(){
    * Item 3a
    * Item 3b
 ```
-###
-<h4>注：代码类型错误，出现错误警告（红色背景）</h4>
+
+<h6>注：代码类型错误，出现错误警告（红色背景）</h6>
 ```javascript
 1. Item 1
 2. Item 2
@@ -34,3 +35,5 @@ function hello(){
    * Item 3a
    * Item 3b
 ```
+
+###
