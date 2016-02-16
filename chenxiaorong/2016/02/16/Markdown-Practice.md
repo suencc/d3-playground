@@ -1,18 +1,4 @@
-
-```
-function hello(){
-      alert('hello world!');
-}
-```
-
-```javascript
-function hello(){
-      alert('hello world!');
-}
-```
-#
-
-<h5>代码嵌入：</h5>
+#<h5>代码嵌入：</h5>
 ```markdown
 1. Item 1
 2. Item 2
@@ -37,4 +23,4 @@ function hello(){
    * Item 3b
 ```
 
-#
+##
