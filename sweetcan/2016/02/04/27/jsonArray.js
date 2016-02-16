@@ -1,0 +1,13 @@
+title='星期';
+d3.select('title').html(title);
+d3.select('body').append('p').html('<p>星期数组</p>').style('color','green');
+cmcc=[];
+cmcc.push("星期一 ");
+cmcc.push("星期二 ");
+cmcc.push("星期三 ");
+cmcc.push("星期四 ");
+cmcc.push("星期五 ");
+cmcc.push("星期六 ");
+cmcc.push("星期日 ");
+JSON.stringify(cmcc);
+alert(cmcc);
