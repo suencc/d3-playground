@@ -1,4 +1,4 @@
-#2016
+#
 ```
 function hello(){
       alert('hello world!');
@@ -10,7 +10,7 @@ function hello(){
       alert('hello world!');
 }
 ```
--
+##
 ```markdown
 1. Item 1
 2. Item 2
@@ -25,6 +25,7 @@ function hello(){
    * Item 3a
    * Item 3b
 ```
+###
 注：代码类型错误，出现错误警告（红色背景）
 ```javascript
 1. Item 1
