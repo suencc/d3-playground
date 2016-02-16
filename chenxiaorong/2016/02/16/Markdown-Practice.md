@@ -30,7 +30,7 @@
 >合抱之木，生於毫末；九层之台，起於累土；千里之行，始於足下。
 
 ### 图片链接
-[![baidu](http://imgsrc.baidu.com/forum/pic/item/e1fe9925bc315c60bdde4c4f8db1cb13485477c2.jpg)](http://baidu.com)
+[![laozi](http://a2.att.hudong.com/76/00/01300000254155125783008468804.jpg)](http://baidu.com)
 
 #### 分割
 ---
