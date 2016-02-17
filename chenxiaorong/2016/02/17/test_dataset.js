@@ -5,7 +5,7 @@ d3.select("body").selectAll("p")
     .enter()  
     .append("p")  
     .text(function(d) {  
-        return "我是第 " + d;  
+        return "我是第: " + d;  
     })  
     .style("color", function(d) {  
         if (d > 15) {  
