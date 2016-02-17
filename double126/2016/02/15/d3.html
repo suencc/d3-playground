@@ -173,9 +173,9 @@
 			 
 			//在 body 里添加一个 SVG 画布   
 			var svg = d3.select("body")
-			    .append("svg")
-			    .attr("width", width)
-			    .attr("height", height);
+							    .append("svg")
+							    .attr("width", width)
+							    .attr("height", height);
 			 
 			//画布周边的空白
 			 var padding = {left:30, right:30, top:20, bottom:20};
@@ -186,23 +186,23 @@
 				        
 				//x轴的比例尺
 				var xScale = d3.scale.ordinal()
-				    .domain(d3.range(dataset.length))
-				    .rangeRoundBands([0, width - padding.left - padding.right]);
+										    .domain(d3.range(dataset.length))
+										    .rangeRoundBands([0, width - padding.left - padding.right]);
 				 
 				//y轴的比例尺
 				var yScale = d3.scale.linear()
-				    .domain([0,d3.max(dataset)])
-				    .range([height - padding.top - padding.bottom, 0]);
+										    .domain([0,d3.max(dataset)])
+										    .range([height - padding.top - padding.bottom, 0]);
 				    
 				//定义x轴
 				var xAxis = d3.svg.axis()
-				    .scale(xScale)
-				    .orient("bottom");
+									    .scale(xScale)
+									    .orient("bottom");
 				        
 				//定义y轴
 				var yAxis = d3.svg.axis()
-				    .scale(yScale)
-				    .orient("left");
+									    .scale(yScale)
+									    .orient("left");
 				    
 				//矩形之间的空白
 				var rectPadding = 4;
@@ -224,11 +224,21 @@
 								        .attr("height", function(d){
 								            return height - padding.top - padding.bottom - yScale(d);
 								        })
-								        .attr("fill","red")         //初始颜色为红色
-												.transition()               //启动过渡
-												.duration(1000)
+								        //.attr("fill","red")         //初始颜色为红色
+												//.transition()               //启动过渡
+												//.duration(1000)
 												//.delay(funtion(d,i){return 200*i;})
-												.attr("fill","steelblue");   //终止颜色为铁蓝色
+												.attr("fill","yellow")   //终止颜色为黄色
+												.on("mouseover",function(d,i){
+								            d3.select(this)
+								              .attr("fill","green");
+								        })
+								        .on("mouseout",function(d,i){
+								            d3.select(this)
+								              .transition()
+								              .duration(500)
+								              .attr("fill","yellow");
+								         });
  
 				//添加文字元素
 				var texts = svg.selectAll(".MyText")
@@ -295,7 +305,7 @@
         .attr("cx", 100)
         .attr("cy", 100)
         .attr("r", 45)
-        .style("fill","green");
+        .style("fill","yellow");
  
 				//在1秒（1000毫秒）内将圆心坐标由100变为300
 				circle1.transition()
@@ -306,7 +316,7 @@
 													.attr("cx", 100)
 									        .attr("cy", 100)
 									        .attr("r", 45)
-									        .style("fill","green");
+									        .style("fill","yellow");
  
 				//在1.5秒（1500毫秒）内将圆心坐标由100变为300，
 				//将颜色从绿色变为红色
@@ -320,7 +330,7 @@
 													.attr("cx", 100)
 									        .attr("cy", 100)
 									        .attr("r", 45)
-									        .style("fill","green");
+									        .style("fill","yellow");
  
 				//在2秒（2000毫秒）内将圆心坐标由100变为300
 				//将颜色从绿色变为红色
@@ -332,6 +342,85 @@
 				    .attr("cx", 300)
 				    .style("fill","red")
 				    .attr("r", 25);
+		</script>
+		
+		<hr>
+		<script>
+			//画布大小
+			var width = 400;
+			var height = 200;
+			 
+			//在 body 里添加一个 SVG 画布   
+			var svg = d3.select("body")
+							    .append("svg")
+							    .attr("width", width)
+							    .attr("height", height);
+			    
+			var circle = svg.append("circle")
+											.attr("cx", 100)
+							        .attr("cy", 100)
+							        .attr("r", 45)
+							        .style("fill","yellow");
+ 
+			circle.on("click", function(){
+			    //在这里添加交互内容
+			    console.log(d3.event);
+			});
+		</script>
+		
+		<hr>
+		<p>layout</p>
+		<script>
+			//画布大小
+			var width = 400;
+			var height = 400;
+			 
+			//在 body 里添加一个 SVG 画布   
+			var svg = d3.select("body")
+							    .append("svg")
+							    .attr("width", width)
+							    .attr("height", height);
+							    
+			var dataset = [30,10,43,55,13];
+			var pie = d3.layout.pie();
+			
+			var piedata = pie(dataset);
+			
+			console.log(piedata);
+			
+			var outerRadius = 150; //外半径
+			var innerRadius = 0; //内半径，为0则中间没有空白
+			 
+			var arc = d3.svg.arc()  //弧生成器
+			    .innerRadius(innerRadius)   //设置内半径
+			    .outerRadius(outerRadius);  //设置外半径
+			    
+			var arcs = svg.selectAll("g")
+								    .data(piedata)
+								    .enter()
+								    .append("g")
+								    .attr("transform","translate("+ (width/2) +","+ (width/2) +")");
+								    
+			var color = d3.scale.category10();   //有十种颜色的颜色比例尺					    
+			
+			arcs.append("path")
+			    .attr("fill",function(d,i){
+			        return color(i);
+			    })
+			    .attr("d",function(d){
+			        return arc(d);   //调用弧生成器，得到路径值
+			    });
+			    
+			
+			
+			arcs.append("text")
+			    .attr("transform",function(d){
+			        return "translate(" + arc.centroid(d) + ")";
+			    })
+			    .attr("text-anchor","middle")
+			    .text(function(d){
+			        return d.data;
+			    });
 		</script>
 
   </body>
