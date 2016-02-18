@@ -1,0 +1,31 @@
+function add_text(text){
+    d3.select('body').append('p').html(text);
+}
+
+var obj = { no:1, name:"zhangsan"};
+console.log(obj, obj.no, obj.name);
+
+add_text(obj.no);
+add_text(obj.name);
+                
+
+obj.no = 2;
+obj.name = "lisi";
+
+var jsonobj = JSON.stringify(obj);
+
+console.log(obj);
+console.log(jsonobj);
+
+add_text(obj.no);
+add_text(obj.name);
+add_text(jsonobj);
+
+var js = JSON.parse(jsonobj);
+js.no = 3;
+js.name = "wangwu";
+
+console.log(js);
+
+add_text(js.no)
+add_text(js.name);
