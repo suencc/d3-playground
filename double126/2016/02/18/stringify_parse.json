@@ -1,0 +1,13 @@
+假日 = [];
+假日.push('新年');
+假日.push('国庆');
+假日.push('元旦');
+console.log(假日);
+
+var jsonarray = JSON.stringify(假日);
+console.log(jsonarray );
+alert(假日+ '\n ' +jsonarray );
+
+d3.select('body').append('p').html(假日)
+                 .append('p').html(jsonarray)
+                 .append('p').html(JSON.parse(jsonarray));
