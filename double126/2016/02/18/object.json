@@ -1,0 +1,12 @@
+var obj = { no:1, name:"zhangsan"};
+console.log(obj, obj.no, obj.name);
+
+d3.select('body').append('p').html(obj.no)
+                 .append('p').html(obj.name);
+
+obj.no = 2;
+obj.name = "lisi";
+console.log(obj);
+
+d3.select('body').append('p').html(obj.no)
+                 .append('p').html(obj.name);
