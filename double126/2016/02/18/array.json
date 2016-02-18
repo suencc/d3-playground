@@ -1,0 +1,7 @@
+假日 = [];
+假日.push('新年');
+假日.push('国庆');
+假日.push('元旦');
+console.log(假日);
+console.log(JSON.stringify(假日));
+alert(假日+ '\n ' + JSON.stringify(假日));
