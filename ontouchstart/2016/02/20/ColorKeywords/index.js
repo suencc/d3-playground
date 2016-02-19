@@ -32,4 +32,5 @@ function list(container, data) {
     });
 }
 
-d3.json('color.json', function (e, d) { list(d3.select('body'), d); })
+var url = 'http://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/02/20/ColorKeywords/data.json';
+d3.json(url, function (e, d) { list(d3.select('body'), d); });
