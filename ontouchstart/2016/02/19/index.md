@@ -9,3 +9,7 @@ title : 2016/02/19
 # This is a test of making a web page on iPhone. 
 
 ![](image.jpeg)
+
+<script>
+d3.select('img').style({width: '100%'});
+</script>
