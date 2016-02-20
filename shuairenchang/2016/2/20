@@ -1,0 +1,9 @@
+title = "水果";
+d3.select("title").html(title);
+d3.select("body").append("h1").html(title).style("color","blue");
+水果 = [];
+水果.push('苹果');
+水果.push('梨子');
+水果.push('香蕉');
+console.log(水果);
+JSON.stringify(水果)
