@@ -1,0 +1,9 @@
+array = [];
+array.push("");
+array.push("");
+array.push("");
+array.push("");array.push("");
+array.push("name":"张三");
+console.log(array);
+var context = JSON.stringify(array);
+console.log(context);
