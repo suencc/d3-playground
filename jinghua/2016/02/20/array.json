@@ -1,9 +1,12 @@
 array = [];
+array.push("优炫");
+array.push("软件");
+array.push("true");
+array.push(true);
+array.push(123456);
 array.push("");
-array.push("");
-array.push("");
-array.push("");array.push("");
-array.push("name":"张三");
+array.push({"name":"张三"});
 console.log(array);
-var context = JSON.stringify(array);
-console.log(context);
+var cont = JSON.stringify(array);
+console.log(cont);
+
