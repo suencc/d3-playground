@@ -10,7 +10,7 @@ var ylinear = d3.scale.linear().domain([0,d3.max(销售额)]).range([500,0]);
 
 var xaxis =  d3.svg.axis().scale(xordinal).orient("bottom");
 var yaxis =  d3.svg.axis().scale(ylinear).orient("left");
-svg.append("g").call(xaxis).attr('transform', 'translate(0,' + 500+ ')');
+svg.append("g").call(xaxis).attr('transform', 'translate(0,500)');
 svg.append("g").call(yaxis);
 
 var rects = svg.selectAll("rect").data(销售额).enter().append("rect").attr("x", function(d,i){ return xordinal(i)+40; } ).attr("y",function(d,i){ return ylinear(d); }).attr("width", xordinal.rangeBand() - 10 ).attr("height", function(d,i){ return 500 - ylinear(d) ; });
