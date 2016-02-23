@@ -1,0 +1,8 @@
+json1 = [];
+json1.push('hello');
+json1.push('world');
+d3.select('body').append('h2').style('color','green').html(json1);
+json2 = JSON.stringify(json1);
+d3.select('body').append('h2').style('color','blue').html(json2);
+json3= JSON.parse(json2);
+d3.select('body').append('h2').style('color','red').html(json3);
