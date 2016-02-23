@@ -1,0 +1,6 @@
+people=[];
+people.push('中国人');
+people.push('美国人');
+people.push('英国人');
+console.log(people);
+d3.select('body').append('div').html(JSON.stringify(people))
