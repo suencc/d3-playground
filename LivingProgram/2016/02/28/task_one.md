@@ -44,6 +44,7 @@ Now that you know what github is lets get started!:joy:
 
 In order to reply to issues, and make **markdown files**, you have to learn markdown... :smirk:
 ### Learning Markdown
+> read everything below, before continuing 
 (click this...) :point_right:[Here](https://guides.github.com/features/mastering-markdown/) are some basic features in markdown, 
 and they are enough for you to write comments, or files.
 
@@ -54,12 +55,15 @@ What do you do now :question:
 
 Well here is where you have fun :grinning: :wink:
 
-"Play around" with every single element, because you will need all of them. 
+"Play around" with every single markdown element, because you will need all of them. 
 
 1. Make a new folder every single day (with new date)
 2. Make a new file for every single element
 3. Have fun, make weird tables or lists, explain lists in a list, etc...
 4. After doing all elements, create a single file that showcases your knowledge of markdown and includes all markdown elements.
+## Learn through USAGE not memorization
+> if you don't remember some of the stuff now, don't worry, later on when you **use** it you **will remember**
+Go Ahead. 
 
 You are now a **_Markdown Master_** :triumph: :satisfied:, proceed to the issues in this repository to learn:
 
