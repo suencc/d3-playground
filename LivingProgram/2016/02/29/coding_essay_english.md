@@ -2,8 +2,11 @@
 
 > ## Time Constraints
 
-> By the time an average student gets home and finishes homework, he or she does not have that much time left. I have to go to school for > 4 hours in the morning and at night. After I get home, I run, which combined with stretching time, takes away another 2 hours. If you calculated my time, you will have found after I even get home, it is time for me to eat dinner. After eating dinner and finishing homework, it is pretty much time to go to sleep. Where is the time to code? When you are actually coding it also takes a lot of time because first you have to write the code, then debug it. Since there is little time in a students life, there is little time to code. This time contraint sometimes may cause a person to rush, and make a lot of mistakes too. These mistakes will need more time to be corrected. Time is probably the most valuable resource.
+> By the time an average student gets home and finishes homework, he or she does not have that much time left. I have to go to school for 4 hours in the morning and at night. After I get home, I run, which combined with stretching time, takes away another 2 hours. If you calculated my time, you will have found after I even get home, it is time for me to eat dinner. After eating dinner and finishing homework, it is pretty much time to go to sleep. Where is the time to code? When you are actually coding it also takes a lot of time because first you have to write the code, then debug it. Since there is little time in a students life, there is little time to code. This time contraint sometimes may cause a person to rush, and make a lot of mistakes too. These mistakes will need more time to be corrected. Time is probably the most valuable resource.
 
+> ## Learning Coding is Slow
+
+> When you first start learning coding you do not know anything, and this makes the teachers work even harder. When I first started learnning, I wanted to learn the hardest stuff. After looking at IBM's Watson beat the best Jeopardy player in history was very suprising. Watson sparked my interest in coding, and from the first time I saw it, I wanted to make something just like it, only better.
 
 # 为什么编程很难
 
