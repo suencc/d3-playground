@@ -1,0 +1,186 @@
+<html>
+<head></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Top 20 Familys",
+			"fontSize": 35,
+			"font": "courier"
+		},
+		"subtitle": {
+			"text": "The maximum numbers of family",
+			"color": "#999999",
+			"font": "courier"
+		},
+		"location": "pie-center",
+		"titleSubtitlePadding": 10
+	},
+	"footer": {
+		"text": "*This is the top 20 neuropeptide family which containing most entries  ",
+		"color": "#999999",
+		"fontSize": 18,
+		"font": "open sans",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasWidth": 590,
+		"pieInnerRadius": "95%",
+		"pieOuterRadius": "87%"
+	},
+	"data": {
+		"sortOrder": "label-desc",
+		"content": [
+			{
+				"label": "NA",
+				"value": 904,
+				"color": "#b8c7b5"
+			},
+			{
+				"label": "FARP",
+				"value": 847,
+				"color": "#4f8c93"
+			},
+			{
+				"label": "allatostatin",
+				"value": 296,
+				"color": "#93ffee"
+			},
+			{
+				"label": "periviscerokinin",
+				"value": 280,
+				"color": "#7ec681"
+			},
+			{
+				"label": "pyrokinin",
+				"value": 252,
+				"color": "#777777"
+			},
+			{
+				"label": "insulin",
+				"value": 243,
+				"color": "#888888"
+			},
+			{
+				"label": "gastrin/cholecystokinin",
+				"value": 239,
+				"color": "#999999"
+			},
+			{
+				"label": "glucagon",
+				"value": 237,
+				"color": "#cb2121"
+			},
+			{
+				"label": "POMC",
+				"value": 227,
+				"color": "#830909"
+			},
+			{
+				"label": "NPY",
+				"value": 206,
+				"color": "#923e99"
+			},
+			{
+				"label": "opioid neuropeptide precursor",
+				"value": 197,
+				"color": "#ae83d5"
+			},
+			{
+				"label": "tachykinin",
+				"value": 197,
+				"color": "#3d62a1"
+			},
+			{
+				"label": "AKH/HRTH/RPCH",
+				"value": 175,
+				"color": "#8e85c4"
+			},
+			{
+				"label": "orcokinin",
+				"value": 144,
+				"color": "#646464"
+			},
+			{
+				"label": "serpin",
+				"value": 121,
+				"color": "#747474"
+			},
+			{
+				"label": "chromogranin/secretogranin protein",
+				"value": 119,
+				"color": "#b87d7d"
+			},
+			{
+				"label": "GnRH",
+				"value": 116,
+				"color": "#5a2a2a"
+			},
+			{
+				"label": "vasopressin/oxytocin",
+				"value": 103,
+				"color": "#e7b2b2"
+			},
+			{
+				"label": "somatotropin/prolactin",
+				"value": 101,
+				"color": "#475a7b"
+			},
+			{
+				"label": "arthropod CHH/MIH/GIH/VIH hormone",
+				"value": 93,
+				"color": "#6533d0"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-percentage1",
+			"pieDistance": 20
+		},
+		"inner": {
+			"format": "none"
+		},
+		"mainLabel": {
+			"fontSize": 11
+		},
+		"percentage": {
+			"color": "#999999",
+			"fontSize": 11,
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#cccc43",
+			"fontSize": 11
+		},
+		"lines": {
+			"enabled": true,
+			"color": "#777777"
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"colors": {
+			"segmentStroke": "#000000"
+		}
+	}
+});
+</script>
+
+</body>
+</html>
