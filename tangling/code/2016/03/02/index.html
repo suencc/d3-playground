@@ -97,21 +97,7 @@
                 .attr("x", function(d) { return x(d.letter); })
                 .attr("width", x.rangeBand())
                 .attr("y", function(d) { return y(d.frequency); })
-                .attr("height", function(d) { return height - y(d.frequency); })
-                .on("click",function(d,i){
-				d3.select(this)
-				  .attr("fill","green");
-		   })
-		   .on("mouseover",function(d,i){
-				d3.select(this)
-				  .attr("fill","yellow");
-		   })
-		   .on("mouseout",function(d,i){
-				d3.select(this)
-				  .transition()
-		          .duration(500)
-				  .attr("fill","red");
-		   });
+                .attr("height", function(d) { return height - y(d.frequency); });
 
         d3.select("input").on("change", change);
 
