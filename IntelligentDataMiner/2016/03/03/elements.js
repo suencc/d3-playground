@@ -1,0 +1,7 @@
+d3.select('body') 
+   .append('div')
+   .append('p')
+   .html('Do you think Thresh is overrated? Vote here now:')
+   .append('a')
+   .attr('href', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ/')
+   .html('https://www.youtube.com/watch?v=dQw4w9WgXcQ/')
