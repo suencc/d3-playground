@@ -1,5 +1,1 @@
-```javascript
-
 alert('hi');
-
-```
