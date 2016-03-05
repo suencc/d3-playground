@@ -24,7 +24,6 @@ __Bold__
 [Google](https://www.google.com)
 
 As this quote says:
-
 >Hi
 
 Boxes  1 | Boxes  2
