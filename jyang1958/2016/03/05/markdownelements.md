@@ -21,7 +21,6 @@ __Bold__
     
 ![Some pic](https://www.wonderplugin.com/wp-content/plugins/wonderplugin-lightbox/images/demo-image0.jpg)
 
-https://www.google.com - automatic!
 [Google](https://www.google.com)
 
 As this quote says:
@@ -30,4 +29,3 @@ As this quote says:
 
 Boxes  1 | Boxes  2
 -------- | --------
-
