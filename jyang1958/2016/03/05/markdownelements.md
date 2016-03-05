@@ -29,3 +29,11 @@ As this quote says:
 
 Boxes  1 | Boxes  2
 -------- | --------
+
+```html
+function fancyAlert(arg) {<html>
+  if(arg) {<html>
+    $.facebox({div:'#foo'})
+  }
+}
+```
