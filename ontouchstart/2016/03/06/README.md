@@ -6,3 +6,6 @@
 
 - https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/03/06/load_bootstrap.js
 
+[bootstrap_table.js](bootstrap_table.js)
+
+- https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/03/06/bootstrap_table.js
