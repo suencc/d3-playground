@@ -10,6 +10,6 @@ IntelligentDataMiner learned how to:
 
 ### 2016/03/05
 
-1.Use style elements
-2.Use logs and log query selectors
-3. Streams and spikes
+1. Use style elements 
+2. Use logs and log query selectors 
+3. Streams and spikes 
