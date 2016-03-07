@@ -9,6 +9,7 @@ IntelligentDataMiner learned how to:
 5. Learned the tortoise and the hare story
 
 ### 2016/03/05
+IntelligentDataMiner learned how to:
 
 1. Use style elements 
 2. Use logs and log query selectors 
