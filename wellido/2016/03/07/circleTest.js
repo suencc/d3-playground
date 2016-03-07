@@ -6,5 +6,5 @@ container.append('p').append('img').attr({
                                            height : 100,
                                            width  : 100,
                                            src : src,
-                                           class : img-circle
+                                           class : 'img-circle'
                                           });
