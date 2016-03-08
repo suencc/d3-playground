@@ -14,3 +14,16 @@ IntelligentDataMiner learned how to:
 1. Use style elements 
 2. Use logs and log query selectors 
 3. Streams and spikes 
+
+### 2016/06/05
+IntelligentDataMIner learned:
+
+1. The purpose for learning programming languages
+2. discussed their uses and purposes
+3. the idea of how something useful can become worthless instantly
+
+
+### 2016/07/05
+IntelligentDataMiner learned how to:
+1. Finally use Functions effectively
+2. Understand Javascript a little bit more (in context to keywords and how it functions)
