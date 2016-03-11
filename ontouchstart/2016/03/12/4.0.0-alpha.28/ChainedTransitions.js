@@ -1,7 +1,7 @@
 // http://bl.ocks.org/mbostock/346f4d967650b27c0511
 var margin = {top: 40, right: 40, bottom: 40, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = window.innerWidth - margin.left - margin.right,
+    height = window.innerHeight - margin.top - margin.bottom;
 
 var y = d3.scalePoint()
     .domain(d3.range(50))
