@@ -1,0 +1,7 @@
+d3.select('body')
+  .append('p').html('<h1>Have a good time!<h1>')
+  .append('div').html('<br><h2>青杏园林煮酒香，佳人初试薄衣裳</h2>')
+  .style('color','green')
+  .style('font-size','x-large')
+  .append('a').attr('href','http://www.exam58.com/syscj/3028.html')
+  .html('<br><b>晏殊《浣溪沙·青杏园林煮酒香》宋词翻译与赏析</b>')
