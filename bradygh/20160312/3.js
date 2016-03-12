@@ -1,0 +1,9 @@
+console.log(d3.select("body"));
+d3.select("body")
+.append("p")
+.attr("id","p_b")
+.html("红豆生南国，春来发几枝");
+console.log(d3.selectAll("p#p_b")
+.style("color","red")
+.style("font-size","x-large")
+.text());
