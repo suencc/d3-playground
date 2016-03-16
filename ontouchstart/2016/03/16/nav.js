@@ -16,7 +16,10 @@ function nav(c, data) {
   button.append('span').attr('class', 'icon-bar');
   button.append('span').attr('class', 'icon-bar');
 
-  navbar_header.append('a').attr('href', '#').attr('class', 'navbar-brand').html('Tritry');
+  navbar_header.append('a')
+    .attr('class', 'navbar-brand')
+    .attr('href', data.home.url)
+    .html(data.home.html);
 
   container.append('div')
     .attr('id', 'navbar')
@@ -24,7 +27,7 @@ function nav(c, data) {
     .append('ul')
     .attr('class', 'nav navbar-nav')
     .selectAll('li')
-    .data(data)
+    .data(data.nav)
     .enter()
     .append('li')
     .append('a')

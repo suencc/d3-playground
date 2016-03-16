@@ -1,7 +1,10 @@
 ---
+home:
+  url: "#"
+  html: 水果 
 nav: 
   - 
-    url: "#appl"
+    url: "#apple"
     html: 苹果 
   - 
     url: "#banana"
