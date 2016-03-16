@@ -16,7 +16,4 @@ function load_bootstrap() {
   }
 }
 
-var jq = document.createElement('script');
-jq.src = '/d3-playground/jquery/2.2.1/jquery.min.js';
-jq.onload = load_boostrap;
-document.body.appendChild(jq);
+
