@@ -16,7 +16,7 @@ function load_bootstrap() {
   }
 }
 
-d3.select('head')
-  .append('script')
-  .attr('src', '/d3-playground/jquery/2.2.1/jquery.min.js')
-  .on('load', load_boostrap);
+var jq = document.createElement('script');
+jq.src = '/d3-playground/jquery/2.2.1/jquery.min.js';
+jq.onload = load_boostrap;
+document.head.appendChild(jq);
