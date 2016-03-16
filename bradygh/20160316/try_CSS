@@ -1,0 +1,9 @@
+d3.select('head').append('style').html('body { background: yellow }');
+d3.select('head').append('style').html('button { background: orange }');
+src = "http://ww1.sinaimg.cn/mw1024/63b06dd1gw1f1gama9h05j207g05e3z3.jpg";
+d3.select('body').append('img')
+  .attr({
+       width: '200px',
+       height:'200px',
+       src: src
+   });
