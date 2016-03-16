@@ -11,10 +11,12 @@ function load_bootstrap() {
     this.bootstrap_version = '3.3.6';
     d3.select('head')
       .append('script')
-      .attr('src', '/d3-playground/jquery/2.2.1/jquery.min.js');
-    d3.select('head')
-      .append('script')
       .attr('src', '/d3-playground/bootstrap/3.3.6/js/bootstrap.min.js');
     console.log(this);
   }
 }
+
+// load jQuery first
+d3.select('head')
+  .append('script')
+  .attr('src', '/d3-playground/jquery/2.2.1/jquery.min.js');
