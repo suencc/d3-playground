@@ -1,8 +1,3 @@
-// load jQuery first
-d3.select('head')
-  .append('script')
-  .attr('src', '/d3-playground/jquery/2.2.1/jquery.min.js');
-
 function load_bootstrap() {
   if(! this.bootstrap_version) {
     d3.select('head')
@@ -21,3 +16,7 @@ function load_bootstrap() {
   }
 }
 
+d3.select('head')
+  .append('script')
+  .attr('src', '/d3-playground/jquery/2.2.1/jquery.min.js')
+  .on('load', load_boostrap);
