@@ -1,0 +1,23 @@
+color_data_1 = {
+  color: 'red',
+  background: 'blue'
+};
+color_data_2 = {
+  color: 'red',
+  background: 'purple'
+};
+
+color_data_3 = {
+  color: 'orange',
+  background: 'green'
+};
+
+color_data_4 = {
+  color: 'yellow',
+  background: 'blue'
+};
+
+d3.select('body').append('h1').html('热烈欢迎').style(color_data_1);
+d3.select('body').append('h1').html('热烈欢迎').style(color_data_2);
+d3.select('body').append('h1').html('热烈欢迎!').style(color_data_3);
+d3.select('body').append('h1').html('热烈欢迎!').style(color_data_4);
